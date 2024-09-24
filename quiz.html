@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz </title>
+</head>
+<body>
+    <main>
+        <section class="normalA">
+            <h1>Menu</h1>
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Cardapio</a>
+            <a href="historia.html">historia</a>
+            <a href="contato.html">Contato</a>
+        </section>
+        <section class="quiz-section">
+            <form id="quiz-form">
+                <section class="question">
+                    <h1>Quiz Sobre seu gosto sobre lnaches</h1>
+                    <form class="quiz-form">
+                        <section class="normal">
+                            <h3>1. Quantos lanches vc tem costume de pedir</h3>
+                            <label><input type="radio" name="q1" value="A" onclick="disableOptions('q1'), playSound()">A) Muito</label><br>
+                            <label><input type="radio" name="q1" value="B" onclick="disableOptions('q1'), playSound()">B) +/-</label><br>
+                            <label><input type="radio" name="q1" value="C" onclick="disableOptions('q1'), playSound()">C) Pouco</label><br>
+                            <label><input type="radio" name="q1" value="D" onclick="disableOptions('q1'), playSound()">D) Bem pouco</label><br>
+                        </section>
+            <br>
+                        <section class="normal">
+                            <h3>2. Costuma pedir combos???</h3>
+                            <label><input type="radio" name="q2" value="A" onclick="disableOptions('q2'), playSound()">A) Sim</label><br>
+                            <label><input type="radio" name="q2" value="B" onclick="disableOptions('q2'), playSound()">B) Não</label><br>
+                            <label><input type="radio" name="q2" value="C" onclick="disableOptions('q2'), playSound()">C) +/-</label><br>
+                        </section>
+            <br>
+                        <section class="normal">
+                            <h3>3. Gosta do seu lanche quanto de molho</h3>
+                            <label><input type="radio" name="q3" value="A" onclick="disableOptions('q3'), playSound()">A) Muito</label><br>
+                            <label><input type="radio" name="q3" value="B" onclick="disableOptions('q3'), playSound()">B) Pouco</label><br>
+                            <label><input type="radio" name="q3" value="C" onclick="disableOptions('q3'), playSound()">C) Bem pouco</label><br>
+                            <label><input type="radio" name="q3" value="D" onclick="disableOptions('q3'), playSound()">D) Nenhum</label><br>
+                        </section>
+            <br>
+                        <section class="normal">
+                            <h3>4. Gosta de acompanhamento</h3>
+                            <label><input type="radio" name="q4" value="A" onclick="disableOptions('q4'), playSound()">A) Sim</label><br>
+                            <label><input type="radio" name="q4" value="B" onclick="disableOptions('q4'), playSound()">B) Não</label><br>
+                            <label><input type="radio" name="q4" value="C" onclick="disableOptions('q4'), playSound()">C) Pouco</label><br>
+                        </section>
+                        
+                        <audio id="venceusom" src="som/venceu.mp3" preload="auto"></audio>
+                        <audio id="selecionasom" src="som/seleciona.mp3" preload="auto"></audio>
+                        <audio id="erradosom" src="som/perdeu.mp3" preload="auto"></audio>
+                        <button type="button" id="enviarBtn" onclick="submitQuiz()">Enviar Respostas</button><br><br>
+                        <button type="button" id="resetBtn" onclick="resetQuiz()" disabled>Responder Novamente</button>
+                    </form>
+                <section id="result" class="normal"></section>
+            </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

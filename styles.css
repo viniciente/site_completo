@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "flor";
+    src: url('fontes/GardenOfHeaven.otf') format('opentype'); 
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+
+
+:root{
+    --cor-principal: #c3829e;
+
+    --cor-fundo1: #562135;
+    --cor-fundo2: #e9b1cd;
+    --cor-fundo3: #fcd1d7;
+    --cor-fundo4: #ffe7de;
+
+}
+
+body{
+    margin: 0;
+    background-color: var(--cor-fundo1);
+
+}
+
+header{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+header h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'flor';
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-size: 4vw;
+
+}
+
+header p{
+    padding: 30px;
+    font-family: "Sofadi One", system-ui;
+}
+
+
+main h1{
+    font-family: "flor", sans-serif;
+    color: var(--cor-principal);
+    font-size: 50px;
+    
+}
+
+main p{
+    font-family: "Sofadi One", system-ui;
+}
+
+section{
+    padding: 0px 0px 30px 20px;
+    line-height: 2em;
+    font-size: 1.5vw;
+    height: 100%;
+}
+
+section h1{
+    padding: 30px 0px 30px 20px;
+    line-height: 2em;
+    font-family: "flor", sans-serif;
+    color: var(--cor-principal);
+    font-size: 50px;
+}
+
+section h3{
+    padding: 30px 0px 30px 20px;
+    line-height: 2em;
+    font-family: 'Sofadi One', sans-serif;
+    color: var(--cor-fundo1);
+    font-size: 20px;
+}
+
+section p{
+    font-family: "Sofadi One", system-ui;
+}
+
+section.normal{
+    background-color:var(--cor-fundo2);
+    color: var(--cor-fundo1);
+}
+
+section.normal2{
+    background-color:var(--cor-fundo1);
+    color: var(--cor-fundo2);
+}
+
+section.normalA{
+    background-color:var(--cor-fundo1);
+    color: var(--cor-fundo2);
+    text-align: center;
+}
+
+section.a{
+    font-size: 50px;
+    font-family: "Sofadi One", system-ui;
+    margin: 50px;
+}
+
+
+section.imagem{
+    color: var(--cor-fundo1);
+    background-attachment: fixed;
+    display: inline-block;
+    width: 47.3%;
+    padding: 400px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section#img01{
+    background: url('img/The\ Sakura\ Special.png');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02{
+    background: url('img/28\ receitas\ de\ molho\ para\ hambúrguer\ para\ deixar\ o\ sanduíche\ mais\ gostoso.jpeg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header a, main a, footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-family: "Sofadi One", system-ui;
+}
+
+header a:hover, main a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+header img{
+    width: 100%;
+    height: 650px;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-family: "Sofadi One", system-ui;;
+    text-align: center;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+section.contato{
+    background-color: var(--cor-fundo2);
+    text-align: center;
+}
+
+section.button{
+    align-items: center;
+}
+
+label{
+    font-family: "flor";
+}
+
+input,
+textarea{
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    font-family: "Sofadi One", sans-serif;
+}
+
+input:focus,
+textarea:focus{
+    border-color: #000;
+}
+
+textarea{
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+    font-family: "Sofadi One", sans-serif;
+}
+
+.button{
+    padding-left: 90px;
+    padding-top: 15px;
+    align-items: center;
+}
+
+button{
+    margin-left: 0.5em;
+    color: var(--cor-fundo2);
+    background-color: var(--cor-fundo1);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button:hover{
+    color: var(--cor-fundo1);
+    background-color:var(--cor-fundo2);
+    text-decoration: none;
+    font-family: "Sofadi One", sans-serif;
+}
+
